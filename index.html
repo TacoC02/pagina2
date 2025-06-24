@@ -1,16 +1,13 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Documental de lapices salvajes</title>
+    <title>Documental de Gatos Musculosos</title>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Emblema+One&display=swap" rel="stylesheet">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Emblema+One&family=Montagu+Slab:opsz,wght@16..144,100..700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Emblema+One&family=Montagu+Slab:opsz,wght@16..144,100..700&display=swap" rel="stylesheet">
 </head>
 <body>
     <center><h1 class="emblema-one-regular">Gatos Musculosos</h1></center>
@@ -32,13 +29,28 @@
         <h3><li><a href="https://es.wikipedia.org/wiki/Maine_Coon" target="_blank">Maine Coon</a></li></h3>
         <h3><li><a href="https://es.wikipedia.org/wiki/Bengala_(gato)" target="_blank">Bengalí</a></li></h3>
         <h3><li><a href="https://es.wikipedia.org/wiki/British_Shorthair" target="_blank">British Shorthair</a></li></h3>
-        <h3><li><a href="https://es.wikipedia.org/wiki/Abisinio_(gato)" target="_blank">Abisinio</a></li></li></h3>
+        <h3><li><a href="https://es.wikipedia.org/wiki/Abisinio_(gato)" target="_blank">Abisinio</a></li></h3>
     </ul><br>
+    <button onclick="mostrarCuriosidad()">🐾 Dato curioso felino</button>
+    <p id="curiosidad" style="display:none; text-align:center; font-weight:bold; color:#7c3aed;"></p>
     <p>El enemigo de los Gatos musculosos son los "Perros Saiyajins" que estos dicen que les roban la comida pero esta comida en realidad fue robada mucho tiempo atras por los "Perros Saiyajins" y los gatos la quieren recuperar. Por esto se han formado 3 guerras llamadas "Las 3 guerras del hambre"</p>
     <div>
         <img src="https://masterpiecer-images.s3.yandex.net/dda5cbab63dd11eeb4281e2a02a7791f:upscaled">
         <img src="https://media.istockphoto.com/id/1463565200/es/vector/dise%C3%B1o-de-logotipo-de-letras-versus-o-vs.jpg?s=612x612&w=0&k=20&c=PJ0Q2IkEii1hHEAiNqCztmSvrxYzduRqKgyKjuEohhk=">
         <img src="https://i.pinimg.com/236x/89/d1/fc/89d1fce9e4dcee490806fa21e86937ba.jpg">
     </div>
+    <script>
+        function mostrarCuriosidad() {
+            const curiosidades = [
+                "Los gatos Sphynx no son realmente calvos, tienen una fina capa de vello.",
+                "El gato más musculoso registrado fue un Sphynx con una mutación genética llamada 'miostatina'.",
+                "Los gatos pueden saltar hasta 6 veces la longitud de su cuerpo gracias a sus potentes músculos.",
+                "El ronroneo de los gatos ayuda a sanar sus músculos y huesos."
+            ];
+            const random = Math.floor(Math.random() * curiosidades.length);
+            document.getElementById('curiosidad').style.display = 'block';
+            document.getElementById('curiosidad').innerText = curiosidades[random];
+        }
+    </script>
 </body>
 </html>

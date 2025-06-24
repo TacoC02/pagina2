@@ -1,62 +1,104 @@
-.emblema-one-regular {
-    font-family: "Emblema One", system-ui;
-    font-weight: 400;
-    font-style: normal;
-  }
-  
-  .emblema-one-regular {
-    font-family: "Emblema One", system-ui;
-    font-weight: 400;
-    font-style: normal;
-  }
-
-  
-.montagu-slab-uniquifier {
-    font-family: "Montagu Slab", serif;
-    font-optical-sizing: auto;
-    font-weight: weight;
-    font-style: normal;
-  }
-  
-
 body {
-    background-color: black;
+    background: linear-gradient(135deg, #f5e9e2 0%, #e0c3fc 100%);
     background-image: url("https://images.unsplash.com/photo-1669474643202-68018db3fd64?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Y2FyYSUyMGRlJTIwZ2F0byUyMG5lZ3JvfGVufDB8fDB8fHww");
-    
+    font-family: 'Montagu Slab', serif;
+    color: #333;
+    margin: 0;
+    padding: 0;
 }
 
-p {color: white;
-font-family: "Montagu Slab", serif;}
-
-ul {font-family: "Montagu Slab", serif;;}
-
-.ola {background-color: rgba(0, 0, 0, 0.555)}
-
-h1 {color: rgb(219, 226, 20);
-font-weight: bold;}
-
-h2 {color: rgb(219, 226, 20);
-font-weight: bold;}
-
-ul {color: white;
-font-weight: bold}
-
-a {color: red;
-font-weight: bold;}
-
-img {border-radius: 10%;
-width: 500px;
-height: 500px;
+/* Títulos */
+h1, h2 {
+    font-family: 'Emblema One', cursive;
+    color: #7c3aed;
+    text-shadow: 2px 2px 8px #fff6;
+    margin-top: 30px;
 }
 
-.mesa {width: 600px;
-height: 700px;}
+h3 {
+    font-family: 'Dancing Script', cursive;
+    color: #ff9800;
+    margin: 0;
+}
 
-.silla {width: 600px;
-    height: 700px;}
+/* Párrafos */
+p {
+    font-size: 1.1em;
+    line-height: 1.7;
+    margin: 20px 10vw;
+    background: #fff8;
+    border-radius: 12px;
+    padding: 16px;
+    box-shadow: 0 2px 8px #0001;
+}
 
-.pared {width: 600px;
-        height: 700px;}
+/* Imágenes con animación */
+img {
+    border-radius: 18px;
+    box-shadow: 0 4px 16px #0002;
+    margin: 18px 0;
+    transition: transform 0.3s, box-shadow 0.3s;
+    max-width: 320px;
+    width: 90vw;
+    display: block;
+}
 
-div {display: flex;
-justify-content: center;}
+img:hover {
+    transform: scale(1.07) rotate(-2deg);
+    box-shadow: 0 8px 32px #7c3aed55;
+}
+
+/* Lista de razas */
+ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 18px;
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    background: #e0c3fcaa;
+    border-radius: 10px;
+    padding: 12px 22px;
+    box-shadow: 0 2px 8px #7c3aed22;
+    font-size: 1.1em;
+    transition: background 0.3s, transform 0.3s;
+}
+
+ul li:hover {
+    background: #7c3aed;
+    color: #fff;
+    transform: scale(1.05);
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+div {
+    display: flex;
+    justify-content: center;
+    gap: 18px;
+    margin: 24px 0;
+}
+
+button {
+    display: block;
+    margin: 24px auto;
+    padding: 12px 28px;
+    background: #7c3aed;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.1em;
+    cursor: pointer;
+    box-shadow: 0 2px 8px #7c3aed33;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background: #ff9800;
+}
